@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración PC Gaming para Streaming - Minecraft</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 5px solid #667eea;
+        }
+        .section h2 {
+            color: #1a1a2e;
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .section h3 {
+            color: #16213e;
+            margin-top: 25px;
+            font-size: 1.3em;
+        }
+        .game-analysis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .game-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .game-card.selected {
+            border-color: #28a745;
+            background: #f8fff9;
+        }
+        .game-card.rejected {
+            border-color: #dc3545;
+            background: #fff5f5;
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .specs-table th {
+            background: #1a1a2e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .specs-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .specs-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .price-highlight {
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .total-price {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .requirement-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .requirement-card h4 {
+            margin: 0 0 10px 0;
+            color: #1a1a2e;
+        }
+        .streaming-specs {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .streaming-specs h4 {
+            margin-top: 0;
+            color: white;
+        }
+        .expansion-section {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .expansion-section h4 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            .game-analysis {
+                grid-template-columns: 1fr;
+            }
+            .requirements-grid {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 Configuración PC Gaming para Streaming</h1>
+            <p>Proyecto de Configuración de Equipo para Streaming de Videojuegos - Presupuesto USD $1000</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>1. Selección del Juego Principal: Minecraft Java Edition</h2>
+                
+                <div class="game-analysis">
+                    <div class="game-card selected">
+                        <h3>🟢 Minecraft Java Edition - SELECCIONADO</h3>
+                        <p><strong>Razones para la selección:</strong></p>
+                        <ul>
+                            <li><strong>Optimización:</strong> Altamente optimizable, permite ajustar gráficos para mantener rendimiento</li>
+                            <li><strong>Contenido streaming:</strong> Excelente para contenido creativo, construcciones, mods</li>
+                            <li><strong>Audiencia:</strong> Amplia base de espectadores en todas las plataformas</li>
+                            <li><strong>Longevidad:</strong> Juego con actualizaciones constantes y comunidad activa</li>
+                            <li><strong>Requisitos escalables:</strong> Puede funcionar en hardware básico o aprovecha el avanzado</li>
+                        </ul>
+                    </div>
+
+                    <div class="game-card rejected">
+                        <h3>🔴 Counter-Strike 2 - DESCARTADO</h3>
+                        <p><strong>Razones del descarte:</strong></p>
+                        <ul>
+                            <li><strong>Competitividad extrema:</strong> Requiere FPS altos y estables (240+ FPS ideal)</li>
+                            <li><strong>Hardware demandante:</strong> Necesita CPU y GPU de alta gama para streaming competitivo</li>
+                            <li><strong>Streaming complejo:</strong> El gameplay competitivo es difícil de mantener mientras se transmite</li>
+                            <li><strong>Presupuesto insuficiente:</strong> Hardware óptimo excede los $1000 USD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="game-analysis">
+                    <div class="game-card rejected">
+                        <h3>🔴 Valorant - DESCARTADO</h3>
+                        <p><strong>Razones del descarte:</strong></p>
+                        <ul>
+                            <li><strong>Anti-cheat Vanguard:</strong> Puede interferir con software de streaming</li>
+                            <li><strong>FPS críticos:</strong> Requiere 144+ FPS para gameplay competitivo óptimo</li>
+                            <li><strong>Dual-tasking difícil:</strong> Concentración en ranked vs. entretenimiento del stream</li>
+                            <li><strong>Hardware especializado:</strong> Mejor rendimiento con CPUs Intel de alta frecuencia</li>
+                        </ul>
+                    </div>
+
+                    <div class="game-card">
+                        <h3>🎯 Minecraft - Ventajas para Streaming</h3>
+                        <ul>
+                            <li><strong>Interacción:</strong> Fácil comunicación con viewers durante gameplay</li>
+                            <li><strong>Creatividad:</strong> Contenido variado (survival, creative, mods, mapas)</li>
+                            <li><strong>Performance predecible:</strong> FPS estable permite dedicar recursos al streaming</li>
+                            <li><strong>Comunidad:</strong> Ideal para construir audiencia consistente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Requisitos del Sistema</h2>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h4>Minecraft - Mínimos</h4>
+                        <p><strong>CPU:</strong> Intel i3-3210 / AMD A8-7600</p>
+                        <p><strong>RAM:</strong> 4 GB</p>
+                        <p><strong>GPU:</strong> GeForce 400 Series / Radeon HD 7000</p>
+                        <p><strong>Almacenamiento:</strong> 1 GB</p>
+                    </div>
+
+                    <div class="requirement-card">
+                        <h4>Minecraft - Recomendados</h4>
+                        <p><strong>CPU:</strong> Intel i5-4690 / AMD A10-7800</p>
+                        <p><strong>RAM:</strong> 8 GB</p>
+                        <p><strong>GPU:</strong> GeForce 700 Series / Radeon Rx 200</p>
+                        <p><strong>Almacenamiento:</strong> 4 GB (SSD recomendado)</p>
+                    </div>
+
+                    <div class="requirement-card">
+                        <h4>Streaming + Gaming</h4>
+                        <p><strong>CPU:</strong> 6+ núcleos para encoding</p>
+                        <p><strong>RAM:</strong> 16 GB (8GB juego + 4GB OBS + 4GB sistema)</p>
+                        <p><strong>GPU:</strong> Codificación NVENC/AMD VCE</p>
+                        <p><strong>Upload:</strong> 5+ Mbps para 1080p</p>
+                    </div>
+                </div>
+
+                <div class="streaming-specs">
+                    <h4>🔴 Requisitos Adicionales para Streaming con OBS Studio</h4>
+                    <p><strong>Configuración recomendada para 1080p @ 60fps:</strong></p>
+                    <ul>
+                        <li><strong>Bitrate de video:</strong> 6000-8000 Kbps</li>
+                        <li><strong>Bitrate de audio:</strong> 160-320 Kbps</li>
+                        <li><strong>Encoder:</strong> x264 (CPU) o NVENC/AMD VCE (GPU)</li>
+                        <li><strong>Preset CPU:</strong> "Medium" o "Fast" para balance calidad/performance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Configuración de Hardware Propuesta</h2>
+                
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Modelo Seleccionado</th>
+                            <th>Especificaciones</th>
+                            <th>Precio (USD)</th>
+                            <th>Fuente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Procesador (CPU)</strong></td>
+                            <td>AMD Ryzen 5 5600</td>
+                            <td>6 núcleos/12 hilos, 3.5-4.4 GHz, AM4</td>
+                            <td class="price-highlight">$180</td>
+                            <td>FullH4rd.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Placa Madre</strong></td>
+                            <td>MSI B450M PRO-VDH MAX</td>
+                            <td>AM4, DDR4, USB 3.1, HDMI/DVI</td>
+                            <td class="price-highlight">$85</td>
+                            <td>Maximus.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memoria RAM</strong></td>
+                            <td>Corsair Vengeance LPX 16GB DDR4-3200</td>
+                            <td>2x8GB, CL16, 3200MHz</td>
+                            <td class="price-highlight">$120</td>
+                            <td>XT-PC.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarjeta Gráfica</strong></td>
+                            <td>NVIDIA GeForce RTX 3060</td>
+                            <td>12GB GDDR6, NVENC, Ray Tracing</td>
+                            <td class="price-highlight">$320</td>
+                            <td>HyperGaming.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Almacenamiento</strong></td>
+                            <td>Kingston NV2 500GB M.2 NVMe</td>
+                            <td>500GB, PCIe 4.0, 3500MB/s lectura</td>
+                            <td class="price-highlight">$45</td>
+                            <td>GamingCity.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fuente de Poder</strong></td>
+                            <td>Corsair CV650 80+ Bronze</td>
+                            <td>650W, 80+ Bronze, Semi-modular</td>
+                            <td class="price-highlight">$85</td>
+                            <td>FullH4rd.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gabinete</strong></td>
+                            <td>Cooler Master MasterBox Q300L</td>
+                            <td>Micro-ATX, Ventilación, USB 3.0</td>
+                            <td class="price-highlight">$55</td>
+                            <td>Maximus.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periféricos</strong></td>
+                            <td>Kit Teclado+Mouse+Auriculares básicos</td>
+                            <td>Logitech MK120 + Auriculares Genius</td>
+                            <td class="price-highlight">$45</td>
+                            <td>XT-PC.com.ar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monitor</strong></td>
+                            <td>Samsung 24" 1080p 75Hz</td>
+                            <td>24", 1920x1080, IPS, 75Hz</td>
+                            <td class="price-highlight">$140</td>
+                            <td>GamingCity.com.ar</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="total-price">
+                    💰 COSTO TOTAL: $1,075 USD
+                    <br><small>(Excede presupuesto por $75 - Ver alternativas abajo)</small>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Justificación de Componentes</h2>
+
+                <h3>🔥 AMD Ryzen 5 5600 - Procesador</h3>
+                <p><strong>Características técnicas:</strong> 6 núcleos y 12 hilos con arquitectura Zen 3, frecuencia base de 3.5 GHz y boost de hasta 4.4 GHz. Excelente rendimiento single-core y multi-core.</p>
+                <p><strong>Por qué se eligió:</strong> Balance perfecto para gaming y streaming simultáneo. Los 12 hilos permiten dedicar núcleos al juego y otros al encoding de OBS. Mejor precio/rendimiento en el rango de $150-200.</p>
+
+                <h3>🎮 NVIDIA GeForce RTX 3060 - Tarjeta Gráfica</h3>
+                <p><strong>Características técnicas:</strong> 12GB GDDR6, 3584 CUDA cores, soporte para Ray Tracing y DLSS, encoder NVENC de tercera generación.</p>
+                <p><strong>Por qué se eligió:</strong> El encoder NVENC permite streaming de alta calidad sin impacto en el rendimiento del juego. Los 12GB de VRAM son ideales para Minecraft con mods y texturas HD. Soporta 1080p @ 60fps con margen para futuras actualizaciones.</p>
+
+                <h3>💾 16GB DDR4-3200 - Memoria RAM</h3>
+                <p><strong>Características técnicas:</strong> Dual channel 2x8GB, velocidad 3200MHz, latencia CL16, compatible con perfiles XMP.</p>
+                <p><strong>Por qué se eligió:</strong> Mínimo requerido para streaming + gaming. Minecraft puede usar 6-8GB con mods, OBS necesita 4GB, y el sistema 4GB adicionales.</p>
+
+                <h3>⚡ Kingston NV2 500GB M.2 - Almacenamiento</h3>
+                <p><strong>Características técnicas:</strong> SSD NVMe PCIe 4.0, velocidades de hasta 3500MB/s en lectura.</p>
+                <p><strong>Por qué se eligió:</strong> Los tiempos de carga rápidos son cruciales para streaming (OBS, juego, navegador simultáneamente). 500GB suficientes para sistema, Minecraft, OBS y archivos de grabación básicos.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Optimización del Presupuesto - Configuración Alternativa</h2>
+                
+                <p><strong>Para mantener el presupuesto de $1000 USD, propongo estos cambios:</strong></p>
+                
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Cambio</th>
+                            <th>Componente Original</th>
+                            <th>Componente Alternativo</th>
+                            <th>Ahorro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GPU</td>
+                            <td>RTX 3060 ($320)</td>
+                            <td>RTX 4060 ($280)</td>
+                            <td>-$40</td>
+                        </tr>
+                        <tr>
+                            <td>Monitor</td>
+                            <td>Samsung 24" ($140)</td>
+                            <td>LG 22" 1080p ($105)</td>
+                            <td>-$35</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="total-price">
+                    ✅ COSTO TOTAL OPTIMIZADO: $1,000 USD
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>6. Rendimiento Esperado</h2>
+                
+                <div class="streaming-specs">
+                    <h4>📊 Rendimiento en Minecraft:</h4>
+                    <ul>
+                        <li><strong>FPS en Minecraft Vanilla:</strong> 120-180 FPS @ 1080p con configuración alta</li>
+                        <li><strong>FPS con mods ligeros:</strong> 80-120 FPS @ 1080p</li>
+                        <li><strong>FPS con shaders:</strong> 60-90 FPS @ 1080p (BSL, Complementary)</li>
+                        <li><strong>Streaming simultáneo:</strong> Pérdida de 10-15% de rendimiento usando NVENC</li>
+                    </ul>
+
+                    <h4>🔴 Capacidades de Streaming:</h4>
+                    <ul>
+                        <li><strong>1080p @ 60fps:</strong> Excelente calidad con bitrate 6000 Kbps</li>
+                        <li><strong>720p @ 60fps:</strong> Calidad perfecta con bitrate 4500 Kbps</li>
+                        <li><strong>Plataformas soportadas:</strong> Twitch, YouTube, Facebook Gaming, Discord</li>
+                        <li><strong>Encoding:</strong> NVENC para máximo rendimiento, x264 disponible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>7. Posibilidades de Expansión Futura</h2>
+                
+                <div class="expansion-section">
+                    <h4>🔧 Mejoras Planificadas (6-12 meses):</h4>
+                    <ul>
+                        <li><strong>RAM:</strong> Expandir a 32GB para streaming de mayor calidad ($120)</li>
+                        <li><strong>Almacenamiento:</strong> Añadir HDD 2TB para grabaciones ($60)</li>
+                        <li><strong>Refrigeración:</strong> Cooler aftermarket para CPU ($45)</li>
+                        <li><strong>Audio:</strong> Micrófono dedicado USB ($80)</li>
+                        <li><strong>Cámara:</strong> Webcam 1080p para facecam ($70)</li>
+                    </ul>
+                </div>
+
+                <div class="expansion-section">
+                    <h4>🚀 Mejoras a Largo Plazo (1-2 años):</h4>
+                    <ul>
+                        <li><strong>GPU:</strong> Actualizar a RTX 4070/5060 para 1440p streaming ($400-500)</li>
+                        <li><strong>CPU:</strong> Upgrade a Ryzen 7 5800X3D para mejor rendimiento con mods ($280)</li>
+                        <li><strong>Monitor:</strong> Segundo monitor 1440p para gestión de stream ($200)</li>
+                        <li><strong>Audio:</strong> Interface de audio + micrófono XLR profesional ($250)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. Configuración de Software Recomendada</h2>
+
+                <h3>🎥 OBS Studio - Configuración Optimizada:</h3>
+                <ul>
+                    <li><strong>Encoder:</strong> NVENC (nuevo) para RTX 3060</li>
+                    <li><strong>Rate Control:</strong> CBR (Constant Bitrate)</li>
+                    <li><strong>Bitrate:</strong> 6000 Kbps para 1080p60 / 4500 Kbps para 720p60</li>
+                    <li><strong>Preset:</strong> "Quality" para máxima calidad de imagen</li>
+                    <li><strong>Profile:</strong> High</li>
+                    <li><strong>Look-ahead:</strong> Activado</li>
+                    <li><strong>Psycho Visual Tuning:</strong> Activado</li>
+                </ul>
+
+                <h3>⚙️ Minecraft - Configuración para Streaming:</h3>
+                <ul>
+                    <li><strong>Render Distance:</strong> 12-16 chunks (balance rendimiento/visual)</li>
+                    <li><strong>VSync:</strong> Desactivado (usar limitador de FPS a 120)</li>
+                    <li><strong>Max FPS:</strong> 120 FPS (deja headroom para encoding)</li>
+                    <li><strong>RAM asignada:</strong> 6-8GB (-Xmx8G en launcher)</li>
+                    <li><strong>OptiFine/Sodium:</strong> Recomendado para optimización adicional</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Conclusión</h2>
+                
+                <p>Esta configuración proporciona una excelente base para streaming de Minecraft con las siguientes ventajas:</p>
+                
+                <ul>
+                    <li>✅ <strong>Rendimiento sólido:</strong> 80-120+ FPS en Minecraft mientras se transmite</li>
+                    <li>✅ <strong>Calidad de stream:</strong> 1080p @ 60fps sin problemas, 720p perfecto</li>
+                    <li>✅ <strong>Estabilidad:</strong> Hardware confiable para streams de larga duración</li>
+                    <li>✅ <strong>Expansibilidad:</strong> Platform AM4 permite upgrades futuros</li>
+                    <li>✅ <strong>Costo-efectivo:</strong> Máximo rendimiento dentro del presupuesto</li>
+                    <li>✅ <strong>Versatilidad:</strong> Capaz de ejecutar otros juegos indie y AA</li>
+                </ul>
+
+                <p><strong>Esta configuración es ideal para streamers principiantes e intermedios que buscan comenzar con contenido de calidad profesional sin exceder su presupuesto inicial.</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
