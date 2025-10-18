@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto de PC Gaming</title>
+</head>
+<body>
+
+    <h1>Presupuesto de PC Gaming</h1>
+
+    <h2>Resumen Total</h2>
+    <p><strong>Precio Total:</strong> 1,302,743.39 ARS / 895 USD</p>
+
+    <h2>Componentes</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Componente</th>
+                <th>Modelo / Especificación</th>
+                <th>Precio (ARS)</th>
+                <th>Precio (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microprocesador</td>
+                <td>AMD Ryzen 5 5600G C/video C/cooler (Simil 5600GT)</td>
+                <td>190,354.05</td>
+                <td>130.75</td>
+            </tr>
+            <tr>
+                <td>Refrigeración (Watercooler)</td>
+                <td>Solarmax WC-B360 Negro ARGB Cooling 360 (360MM)</td>
+                <td>89,699.81</td>
+                <td>61.63</td>
+            </tr>
+            <tr>
+                <td>Placa Madre (Motherboard)</td>
+                <td>Gigabyte B550M Gaming X WiFi6 DDR4 AM4</td>
+                <td>179,240.04</td>
+                <td>123.15</td>
+            </tr>
+            <tr>
+                <td>Memoria RAM</td>
+                <td>16GB DDR4 3200 Hiksemi Armor</td>
+                <td>51,059.83</td>
+                <td>34.38</td>
+            </tr>
+            <tr>
+                <td>Almacenamiento (SSD)</td>
+                <td>1TB ADATA Legend 860 M.2 NVMe Gen4</td>
+                <td>103,699.98</td>
+                <td>70.00</td>
+            </tr>
+            <tr>
+                <td>Tarjeta Gráfica (Video)</td>
+                <td>GeForce RTX 3050 6GB MSI Ventus 2X OC</td>
+                <td>302,029.97</td>
+                <td>207.52</td>
+            </tr>
+            <tr>
+                <td>Fuente de Alimentación</td>
+                <td>Gigabyte GP-P550SS 550W 80 Plus Silver</td>
+                <td>73,247.49</td>
+                <td>50.00</td>
+            </tr>
+            <tr>
+                <td>Gabinete</td>
+                <td>Evolabs Bolt Tg 1FAN FRGB</td>
+                <td>38,506.32</td>
+                <td>26.46</td>
+            </tr>
+            <tr>
+                <td>Mouse Gamer</td>
+                <td>Razer Deathadder Essential Black RZ01-0385010</td>
+                <td>29,481.57</td>
+                <td>20.32</td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>Redragon K622 Horus RGB TKL Español</td>
+                <td>77,279.81</td>
+                <td>53.10</td>
+            </tr>
+            <tr>
+                <td>Monitor</td>
+                <td>Asus VA24EHF 24” Black IPS FHD HDMI 100HZ 1MS</td>
+                <td>168,144.53</td>
+                <td>116.21</td>
+            </tr>
+            <tr>
+                <td>Sistema Operativo</td>
+                <td>Windows 11 Home (Licencia OEM)</td>
+                <td>25,200.71</td>
+                <td>17.31</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
