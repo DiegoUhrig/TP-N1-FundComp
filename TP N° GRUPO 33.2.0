@@ -1,1 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo UADER - FCYT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .uader-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .uader-logo {
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+
+        .arrow-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .arrow-blue {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid #1e4d8b;
+            transform: rotate(-30deg);
+            left: -10px;
+            top: 5px;
+        }
+
+        .arrow-red {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid #c1272d;
+            transform: rotate(30deg);
+            right: -10px;
+            top: 5px;
+        }
+
+        .uader-text {
+            text-align: center;
+            color: #1e4d8b;
+            font-size: 11px;
+            line-height: 1.3;
+            max-width: 120px;
+        }
+
+        .divider {
+            width: 2px;
+            height: 80px;
+            background-color: #1e4d8b;
+        }
+
+        .fcyt-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .fcyt-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1e4d8b;
+            letter-spacing: 2px;
+        }
+
+        .fcyt-subtitle {
+            font-size: 11px;
+            color: #1e4d8b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Sección UADER -->
+        <div class="uader-section">
+            <div class="uader-logo">
+                <div class="arrow-container">
+                    <div class="arrow-blue"></div>
+                    <div class="arrow-red"></div>
+                </div>
+            </div>
+            <div class="uader-text">
+                <strong>Universidad Autónoma<br>de Entre Ríos</strong>
+            </div>
+        </div>
+
+        <!-- Divisor -->
+        <div class="divider"></div>
+
+        <!-- Sección FCYT -->
+        <div class="fcyt-section">
+            <div class="fcyt-title">FCYT</div>
+            <div class="fcyt-subtitle">
+                Facultad de Ciencia<br>
+                y Tecnología
+            </div>
+        </div>
+    </div>
+
+<body>
+  <header>
+  <img src="imagenes/r.png" alt="Logo UADER" style="display:block; max-width:200px; height:auto; margin:0.5rem auto;">
+  </header>
+  <div class="container">
+    <div class="header">
+      <h1>TP N┬░1 Fundamentos de computaci├│n</h1>
+          <p>Universidad Autonoma de Entre Rios.</p>
+          <p>Facultad de Ciencia y Tecnologia.</p>
+          <p>Licenciatura en sistemas de informacion</p>
+          <p>Catedra: Fundamentos de Computacion.</p>
+          <p>Tema: "Streaming de Videojuegos". </p>
+          <p>Profesores: Ismael Cassi, Paolo Orundes Cardinali.</p>
+          <p>Alumnos: Johann Marchetti, Diego Uhrig, Eliezer Sanchez y Federico Mattiacci</p>
+          <p>Comision: N┬░2</p>
+          <p>Fecha de entrega: 31/10/2025 </p>
+    </div>
+  
+    <div class="content">
+      <div class="section">
+        <h2>Introducci├│n.</h2>
+        <p>La creaci├│n de contenido en internet es una actividad que se ha vuelto mundialmente popular en los ├║ltimos a├▒os, si bien ya exist├¡an maneras de compartir mensajes, im├ígenes y videos a trav├®s de emails o foros, la globalizaci├│n de YouTube trajo consigo un cambio en la forma en la que consumimos dichas creaciones. Desde video blogs, animaciones, gameplays, sketches c├│micos, entre otros estilos de producciones audiovisuales son publicados y vistos aproximadamente por 122 millones de usuarios diariamente en la comodidad de su casa, de camino a la universidad o trabajo o mientras realizan alguna actividad en sus computadoras o tel├®fonos m├│viles. Esto genera entre las personas intereses art├¡sticos como monetarios, que los motiva a comenzar su propio camino en este rubro, son muchas las historias de personas o grupos que empezaron desde lo m├ís bajo y consiguieron llegar a una popularidad digna de rivalizar, o incluso superar a la de las celebridades m├ís grandes del mundo.</p>
+        <p>Pero esta actividad no es algo precisamente sencillo, al fin y al cabo, una persona que quiera empezar un canal de YouTube tiene que tener conocimientos b├ísicos en programas de edici├│n de video e imagen, redacci├│n de guion, locuci├│n y en algunos casos hacer trabajo de investigaci├│n sobre el t├│pico a tratar, para poder competir contra el amplio abanico de videos interesantes y pulidos que se pueden encontrar en la plataforma. Esto puede ser un punto de inflexi├│n para muchos, pero existe otra alternativa, la transmisi├│n en vivo o streaming. Por medio de p├íginas como Twitch, Kick, Facebook e incluso el mismo YouTube, un usuario puede emitir su perspectiva hacia otras personas por medio de programas como OBS o Streamlabs de forma continua y en tiempo real, a su vez estos espectadores pueden reaccionar y comentar en un chat grupal con simples caracteres o emotes, generando una relaci├│n estrecha y personal con el emisor.</p>
+        <p>Si bien la naturaleza sencilla del stream es uno de sus puntos fuertes, tambi├®n requiere de un compromiso enorme por parte del usuario, por lo que en este env├¡o haremos foco en los requisitos necesarios para poder llevar a cabo exitosamente una transmisi├│n.</p>
+      </div>
+    </div>
+
+  <img src="./imagenes/copilot_img.webp" alt="Streamer jugando Minecraft desde una notebook" style="display:block; max-width:100%; height:auto; margin:0 auto;">
+  
+    <div class="content">
+      <div class="section">
+        <h2>Primeros pasos.</h2>
+        <p>Lo primero en lo que nos tendremos que enfocar es en los conceptos b├ísicos que uno debe comprender, para una mayor sencillez utilizaremos la Inteligencia Artificial para responder preguntas b├ísicas que puedan surgir.</p>
+      </div>
+
+      <div class="section">
+        <h3>┬┐C├│mo funciona formalmente el streaming?</h3>
+        <p style="font-style: bold, italic;">Respuesta t├®cnica (IA):</p>
+        <p>Streaming es una tecnolog├¡a que permite transmitir datos (audio, video u otros) a trav├®s de Internet de forma continua y en tiempo real, sin necesidad de descargar el archivo completo antes de reproducirlo.</p>
+        <p>Funcionamiento formal paso a paso.</p>
+        <p style="font-style: italic;">1. Captura de datos.</p>
+        <p>El proceso comienza con una fuente de se├▒al, por ejemplo:</p>
+        <ul>
+          <li>Una c├ímara (video)</li>
+          <li>Un micr├│fono (audio)</li>
+          <li>O una aplicaci├│n (si estas transmitiendo un videojuego)</li>
+        </ul>
+        <p>Estos dispositivos generan datos sin comprimir.</p>
+        <p style="font-style: italic;">2. Codificaci├│n (encoding).</p>
+        <p>Los datos originales son demasiado grandes para enviarse por Internet directamente, as├¡ que se comprimen mediante un codec (por ejemplo, H.264 para video o AAC para audio).</p>
+        <ul>
+          <li>Reduce el tama├▒o del flujo de datos.</li>
+          <li>Mantiene una calidad aceptable.</li>
+          <li>Prepara la se├▒al para la transmisi├│n.</li>
+        </ul>
+        <p>El programa que hace esto (OBS, XSplit, Streamlabs, etc.) tambi├®n suele empaquetar los datos en un formato contenedor (por ejemplo, FLV, MP4 o MKV)</p>
+  
+        <p style="font-style: italic;">3. Transmisi├│n al servidor (uplink)</p>
+        <p>El flujo codificado se env├¡a a un servidor de streaming a trav├®s de un protocolo de transmisi├│n, como:</p>
+        <ul>
+          <li>RTMP (Real-Time Messaging Protocol) ÔÇö cl├ísico en Twitch, YouTube, etc.</li>
+          <li>SRT o WebRTC ÔÇö m├ís modernos, reducen latencia.</li>
+        </ul>
+        <p>El bitrate (tasa de bits por segundo) debe ser compatible con tu velocidad de subida.</p>
+  
+        <p style="font-style: italic;">4. Procesamiento y redistribuci├│n</p>
+        <p>En el servidor (por ejemplo, los de Twitch o YouTube):</p>
+        <ol>
+          <li>Se recibe la se├▒al RTMP.</li>
+          <li>Se transcodifica a distintas calidades (por ejemplo, 1080p, 720p, 480p) para adaptarse a diferentes conexiones.</li>
+          <li>Se fragmenta el flujo en peque├▒os segmentos (normalmente de 2ÔÇô6 segundos).</li>
+          <li>Se distribuye mediante un CDN (Content Delivery Network) a distintos servidores geogr├íficos.</li>
+        </ol>
+
+        <p style="font-style: italic;">5. Recepci├│n y reproducci├│n (downlink)</p>
+        <p>El espectador:</p>
+        <ol>
+          <li>Se conecta a un nodo CDN.</li>
+          <li>Descarga peque├▒os fragmentos de video/audio de manera continua.</li>
+          <li>El reproductor almacena unos segundos en b├║fer para evitar cortes.</li>
+          <li>Reproduce los datos conforme llegan (sin descargar el archivo completo).</li>
+        </ol>
+        <p>Protocolos comunes en esta etapa:</p>
+        <ul>
+          <li>HLS (HTTP Live Streaming) ÔÇö usado por la mayor├¡a de plataformas.</li>
+          <li>DASH (Dynamic Adaptive Streaming over HTTP) ÔÇö est├índar abierto.</li>
+        </ul>
+  
+        <p style="font-style: italic;">6. Sincronizaci├│n y control</p>
+        <p>Mientras tanto, el reproductor:</p>
+        <ul>
+          <li>Ajusta la calidad autom├íticamente seg├║n el ancho de banda disponible (streaming adaptativo).</li>
+          <li>Mantiene sincron├¡a entre audio y video.</li>
+          <li>Env├¡a datos de control o chat al servidor.</li>
+        </ul>
+
+        <p style="font-style: bold;">Respuesta en lenguaje com├║n:</p>
+        <p>El streaming es como ver un programa de TV en vivo por Internet,pero sin tener que descargarlo antes. Primero, alguien graba o transmite algo, lo que genera imagen y sonido, como son muy pesados, se los comprime con un programa (como OBS). Esto se hace con algo llamado c├│dec, que reduce el tama├▒o sin arruinar la calidad. Despu├®s, ese contenido comprimido se manda a un servidor, usando un protocolo (por ejemplo, RTMP). Ese servidor pertenece a la plataforma donde haces la transmisi├│n que, al recibir la informaci├│n, lo procesa y lo distribuye globalmente a quien lo quiera mirar adapt├índolo a distintas calidades (1080p, 720p, etc) pero solo por partes, guardando unos segundos en un ÔÇ£b├║ferÔÇØ para evitar cortes mientras el contenido se reproduce en tiempo real.</p>
+    
+        <h3>┬┐Qu├® es el bitrate en streaming?</h3>
+        <p>Explicaci├│n t├®cnica (IA):</p>
+        <p>El bitrate en streaming es la cantidad de datos que se transmiten por segundo durante una transmisi├│n de video o audio.</p> 
+        <p>Se mide en kilobits por segundo (Kbps) o megabits por segundo (Mbps).</p>
+        <p>Un bitrate m├ís alto generalmente significa mejor calidad de imagen y sonido, pero tambi├®n requiere una conexi├│n a Internet m├ís r├ípida y estable para evitar interrupciones o cortes en la transmisi├│n.</p>
+
+        <p>Traducci├│n en lenguaje com├║n:</p>
+        <p>El bitrate es como la cantidad de ÔÇ£informaci├│nÔÇØ que se manda por segundo cuando hac├®s un vivo/directo.</p>
+        <p>Si mand├ís mucha, se ve y se escucha mejor, pero necesit├ís buen Internet. Si mand├ís poca, se ve m├ís feo pero funciona con conexiones lentas.</p>
+
+        <h3>┬┐Qu├® es la latencia?</h3>
+        <p>Explicaci├│n t├®cnica (IA):</p>
+        <p>La latencia es el tiempo que tarda un paquete de datos en viajar desde el origen hasta el destino en una red.</p>
+        <p>Se mide en milisegundos (ms). Una latencia baja significa que la comunicaci├│n es r├ípida y fluida, mientras que una latencia alta puede causar retrasos, especialmente en juegos en l├¡nea, videollamadas o transmisiones en vivo.</p>
+
+        <p>Traducci├│n en lenguaje com├║n:</p>
+        <p>La latencia es el ÔÇ£delayÔÇØ o retraso que hay entre que hac├®s algo y se ve en la pantalla.</p>
+        <p>Por ejemplo, cuando jug├ís online y apret├ís una tecla, si hay mucha latencia, el personaje tarda en reaccionar. Mientras menos latencia, m├ís r├ípido y fluido todo.</p>
+
+        <h3>┬┐Qu├® funci├│n cumple la GPU en una PC gamer?</h3>
+        <p>Explicaci├│n t├®cnica (IA):</p>
+        <p>La GPU (Unidad de Procesamiento Gr├ífico) es el componente encargado de procesar y renderizar im├ígenes, gr├íficos y videos en una computadora.</p>
+        <p>En una PC gamer, la GPU permite ejecutar videojuegos con alta calidad visual, efectos especiales, y fluidez. Tambi├®n ayuda en tareas como edici├│n de video, dise├▒o 3D y aceleraci├│n de procesos gr├íficos.</p>
+
+        <p>Traducci├│n en lenguaje com├║n:</p>
+        <p>La GPU es la parte de la compuntadora que se encarga de que los juegos se vean bien o en mejor resolucion.</p>
+        <p> Hace que los gr├íficos tengan buena calidad, que los movimientos sean fluidos y que no se trabe. Sin una buena GPU, los juegos se ven feos o van muy lentos.</p>
+
+        <p></p>
+      </div>
+
+  <div class="content">
+    <div class="section">
+      <h3>┬┐Qu├® es OBS Studio y para qu├® sirve?</h3>
+      <p>Ahora que ya conocemos mejor estas ideas, procederemos a hablar sobre el programa que usaremos para stremear, OBS Studio.</p>
+      <p>OBS: Open Broadcaster SoftwareOBS Studio (Open Broadcaster Software) es una herramienta gratuita y de c├│digo abierto dise├▒ada para grabar video y transmitir en vivo desde tu computadora.</p>
+      <p>Es ampliamente utilizada por streamers, creadores de contenido, educadores y profesionales que desean producir transmisiones de alta calidad sin necesidad de software costoso.</p>
+
+      <ul>Requisitos minimos OBS: 
+        <li>Sistema operativo: Windows 8, 8.1, 10 o 11 (64 bits), macOS 10.13 o posterior, Linux (var├¡a seg├║n la distribuci├│n)</li>
+        <li>Procesador: Intel i5 de segunda generaci├│n o AMD FX Series o superior</li>
+        <li>Memoria: Al menos 4 GB de RAM</li>
+        <li>Tarjeta gr├ífica: Compatible con DirectX 10 y OpenGL 3.3 o superior</li>
+        <li>Almacenamiento: Espacio suficiente para grabar y almacenar videos</li>
+        <li>Conexi├│n a Internet: Requerida para transmisiones en vivo</li>
+      </ul>
+
+      <h3>┬┐Para que sirve OBS?</h3>
+      <ol>
+        <li>Grabaci├│n de pantalla: Captura todo lo que ocurre en tu monitor o una ventana espec├¡fica, ideal para tutoriales, clases, presentaciones o gameplays.</li>
+        <li>Transmisi├│n en vivo (streaming): Permite emitir en tiempo real a plataformas como YouTube, Twitch, Facebook Live, entre otras.</li>
+        <li>Mezcla de fuentes: Combina m├║ltiples entradas de video y audio (pantalla, c├ímara web, micr├│fono, m├║sica, etc.) en una sola escena. </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h2>Presupuestos.</h2>
+      <p>Ya habiendo dejado en claro todo esto, pasaremos a uno de los pasos m├ís complicados, la elecci├│n de nuestro medio principal con el que haremos una emisi├│n en directo, la computadora. Hay una cantidad variopinta de combinaciones posibles de componentes para elegir, por el momento, supongamos que tenemos un presupuesto de 1000 dolares y que tenemos que elegir entre alguno de estos 4 presupuestos.</p>
+      <br>
+      <h3>Presupuesto N┬░1</h3> <!-- Presupuesto de Diego Uhrig -->
+      <p style="font-style: bold;">NOTEBOOK GAMER HP 15.6" VICTUS RYZEN 5 7535HS 8GB 512GB RX6550M FHD W11 R5</p>
+      <ul>
+        <li>Procesador AMD Ryzen 5 7535HS.</li>
+        <li>Memoria RAM DDR5-5600 MT/s de 8 GB.</li>
+        <li>Almacenamiento SSD PCIe┬« Gen4 NVMeÔäó M.2  de 512 GB y Memoria Ram Sodimm Hikvision 8GB 5600 Mhz DDR5 5600MHZ.</li>
+        <li>Pantalla FHD, IPS, antirreflejante, de 39,6 cm (15.6") en diagonal, 300 nits y 62.5 % de sRGB (1920 x 1080)</li>
+        <li>Interfaz de red: LAN 10/100/1000 GbE integrada</li>
+        <li>Tarjeta inal├ímbrica MediaTek Wi-Fi 6E MT7922 (2x2) y Bluetooth┬« 5.3</li>
+        <li>Bater├¡a de pol├¡mero de iones de litio, de 3celdas y 52,5Wh</li>
+        <li>Dimensiones y peso: 35,79 de ancho, 25,5 de profundidad, 2,35cm de alto y 2,29 kg</li>
+        <li>Software incluido: Prueba gratuita de 1 mes de Adobe; Prueba de 30 d├¡as de McAfee Online Protection y 1 mes de prueba para los nuevos clientes de Microsoft Office 365.</li>
+        <li>Mouse Fury Scrapper RGB</li>
+        <li>Auricular c/microfono Inalambrico Redragon Ire Pro Black H848</li>
+        <li>Webcam Logitech C270 HD 720P.</li>
+        <li>Licencia de Microsoft Windows 11 Home (PC) - Microsoft Key - GLOBAL.</li>
+      </ul>
+      <p style="font-style: italic;">Precios finales: $1.327.058,88 o $983,24 USD</p>
+      <p>Notebook: $1.151.319,81 o 853 USD (se toma como refencia un dolar con valor de $1.350 ARS)</p>
+      <p>Memoria RAM extra: $37.800,00 ARS o $28 USD</p>
+      <p>Perif├®ricos y accesorios: $103.500 o $76.72 USD</p>
+      <p>Licencia Windows: $34.439,07 = $25,52 USD</p>
+
+      <h3>Presupuesto N┬░2</h3> <!-- Presupuesto de Eliezer Sanchez -->
+      <p style="font-style: bold;">PC ARMADA GAMA MEDIA.</p>
+      <ul>
+        <li>Microprocesador: AMD Ryzen 5 5600G C/video C/cooler (Simil 5600GT)</li>
+        <li>Refrigeraci├│n: (Watercooler) Solarmax WC-B360 Negro ARGB Cooling 360 (360MM)</li>
+        <li>Placa Madre: Gigabyte B550M Gaming X WiFi6 DDR4 AM4</li>
+        <li>Memoria RAM 16GB DDR4 3200 Hiksemi Armor</li>
+        <li>Almacenamiento (SSD) 1TB ADATA Legend 860 M.2 NVMe Gen4</li>
+        <li>Tarjeta Gr├ífica: GeForce RTX 3050 6GB MSI Ventus 2X OC</li>
+        <li>Fuente de Alimentaci├│n: Gigabyte GP-P550SS 550W 80 Plus Silver</li>
+        <li>Gabinete: Evolabs Bolt Tg 1FAN FRGB</li>
+        <li>Mouse Gamer Razer Deathadder Essential Black RZ01-0385010</li>
+        <li>Teclado Redragon K622 Horus RGB TKL Espa├▒ol</li>
+        <li>Monitor Asus VA24EHF 24ÔÇØ Black IPS FHD HDMI 100HZ 1MS</li>
+        <li>Sistema Operativo: Windows 11 Home (Licencia OEM)</li>
+      </ul>
+      <p style="font-style: italic;">Precio Final: 1,302,743.39 ARS / 895 USD</p>
+
+      <h3>Presupuesto N┬░3</h3> <!-- Presupuesto de Federico Mattiacci -->
+      <p style="font-style: bold;">PC ARMADA GAMA ALTA CON POSIBILIDAD DE MEJORAS.</p>
+      <ul>
+        <li>Procesador AMD Ryzen 5 7600</li>
+        <li>Motherboard Gigabyte B650M-H</li>
+        <li>Memoria RAM Kingston Fury Beast RGB 16GB 5600 Mhz DDR5</li>
+        <li>Placa de video ASRock AMD Radeon RX 7600 8GB</li>
+        <li>Disco Solido SSD 256GB Memox Nvme</li>
+        <li>Gabinete Zer01 Centauri 3</li>
+        <li>Fuente de poder 650W MSI MAG A650BN 80 Plus bronze</li>
+        <li>Monitor LED Solarmax 19" SX19F2</li>
+        <li>Auriculares Fury Warhawk</li>
+        <li>Microfono Blue/Logitech Snowball ICE</li>
+        <li>Combo Teclado y mouse logitech MK120</li>
+      </ul>
+      <p style="font-style: italic;">Precio Final: $$1.402.814,48 ARS / $974,92 USD</p>
+
+      <h3>Presupuesto N┬░4</h3> <!-- Presupuesto de Johann Marcheti -->
+      <p style="font-style: bold;">PC ARMADA GAMA MEDIA ALTA.</p>
+      <ul>
+        <li>Procesador (CPU) AMD Ryzen 5 5600</li>
+        <li>Placa Madre MSI B450M PRO-VDH MAX</li>
+        <li>Memoria RAM Corsair Vengeance LPX 16GB DDR4-3200</li>
+        <li>Tarjeta Gr├ífica NVIDIA GeForce RTX 4060</li>
+        <li>Almacenamiento Kingston NV2 500GB M.2 NVMe</li>
+        <li>Fuente de Poder Corsair CV650 80+ Bronze</li>
+        <li>Gabinete Cooler Master MasterBox Q300L</li>
+        <li>Perif├®ricos Kit Logitech MK120 + Auriculares Genius</li>
+        <li>Monitor LG 22" 1080p </li>
+      </ul>
+      <p style="font-style: italic;">Precio Final: $1000 USD</p>
+      <br>
+      <p>Todas estas elecciones est├ín basadas en distintas prioridades que cada usuario puede necesitar, como la comodidad, la posibilidad de mejorar a futuro, entre otras. Sin embargo, tendremos que elegir solamente a uno, por lo que le pediremos ayuda una vez m├ís a la IA para que haga una tabla comparativa y que elija la mejor propuesta.</p>
+      <h3>Comparativa de Presupuestos ÔÇö IA</h3>
+      <p>Tabla comparativa de los 4 presupuestos recibidos. Columnas: Presupuesto 1 a 4. Filas: componentes y evaluaci├│n.</p>
+
+
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Componente / Caracter├¡stica</th>
+            <th>Presupuesto 1<br>(Notebook)</th>
+            <th>Presupuesto 2</th>
+            <th>Presupuesto 3</th>
+            <th>Presupuesto 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Precio (USD aprox.)</td><td>983</td><td>895</td><td>975</td><td>1000</td></tr>
+          <tr><td>Procesador (CPU)</td><td>AMD Ryzen 5 7535HS (laptop)</td><td>AMD Ryzen 5 5600G</td><td>AMD Ryzen 5 7600</td><td>AMD Ryzen 5 5600</td></tr>
+          <tr><td>Refrigeraci├│n</td><td>Integrada (port├ítil)</td><td>Watercooler 360 mm</td><td>Cooler stock</td><td>Cooler stock</td></tr>
+          <tr><td>Placa madre</td><td>ÔÇö (notebook)</td><td>Gigabyte B550M Gaming X WiFi6</td><td>Gigabyte B650M-H</td><td>MSI B450M PRO-VDH MAX</td></tr>
+          <tr><td>Memoria RAM</td><td>DDR5 16GB (2├ù8GB) 5600MHz (SODIMM)</td><td>DDR4 16GB 3200MHz</td><td>DDR5 16GB 5600MHz</td><td>DDR4 16GB 3200MHz</td></tr>
+          <tr><td>Almacenamiento</td><td>SSD 512GB PCIe Gen4</td><td>SSD 1TB ADATA Leg. 860 NVMe Gen4</td><td>SSD 256GB NVMe</td><td>SSD 500GB NVMe</td></tr>
+          <tr><td>Tarjeta gr├ífica (GPU)</td><td>Gr├ífica integrada (Radeon 680M)</td><td>GeForce RTX 3050 6GB</td><td>ASRock Radeon RX 7600 8GB</td><td>GeForce RTX 4060 8GB</td></tr>
+          <tr><td>Fuente</td><td>ÔÇö (notebook)</td><td>Gigabyte GP-P550SS 550W 80+ Silver</td><td>MSI MAG A650BN 650W 80+ Bronze</td><td>Corsair CV650 650W 80+ Bronze</td></tr>
+          <tr><td>Monitor</td><td>15.6" FHD (integrado)</td><td>Asus 24" FHD 100Hz IPS</td><td>Solarmax 19"</td><td>LG 22" 1080p</td></tr>
+          <tr><td>Gabinete</td><td>ÔÇö (notebook)</td><td>Evolabs Bolt TG</td><td>Zer01 Centauri 3</td><td>Cooler Master Q300L</td></tr>
+          <tr><td>Perif├®ricos incluidos</td><td>Mouse, auricular, webcam</td><td>Mouse, teclado, monitor</td><td>Teclado+mouse, micr├│fono, auriculares</td><td>Kit teclado+mouse, auriculares</td></tr>
+          <tr><td>Sistema operativo</td><td>Windows 11 Home (licencia)</td><td>Windows 11 Home (OEM)</td><td>ÔÇö</td><td>ÔÇö</td></tr>
+          <tr><td>Uso ideal</td><td>Oficina / movilidad / streaming liviano</td><td>Gaming medio + streaming</td><td>Gaming alto / edici├│n (plataforma moderna)</td><td>Gaming alto + streaming (mejor GPU)</td></tr>
+          <tr><td>Rendimiento estimado</td><td>ÔÿàÔÿà (b├ísico)</td><td>ÔÿàÔÿàÔÿà (bueno)</td><td>ÔÿàÔÿàÔÿàÔÿà (muy bueno)</td><td>ÔÿàÔÿàÔÿàÔÿàÔÿà (excelente)</td></tr>
+        </tbody>
+      </table>
+      <p>Conclusi├│n: El Presupuesto N┬░4 gana porque tiene el mejor equilibrio entre potencia y precio. Su RTX 4060 es la tarjeta gr├ífica m├ís fuerte de todas, ideal para jugar y hacer streaming con gran calidad. El Ryzen 5 5600 la acompa├▒a muy bien, ofreciendo un rendimiento s├│lido sin gastar de m├ís. Adem├ís, incluye componentes confiables (fuente Corsair, gabinete Cooler Master) y perif├®ricos b├ísicos listos para usar. En resumen: es la opci├│n m├ís potente, estable y completa por su costo.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h2>Selecci├│n de contenido.</h2>
+      <p>Ahora que ya tenemos el por qu├® y el c├│mo ahora tenemos que elegir el qu├®. Recomendamos hacer gameplays, ya que con los videojuegos se pueden generar de manera espont├ínea momentos inolvidables para los espectadores, as├¡ como tambi├®n una comunidad en torno a los intereses, personalidad y forma de jugar del emisor.</p>
+      <p>Teniendo esto en cuenta, proponemos 3 de los juegos m├ís populares en las plataformas de streaming.</p>
+    </div>
+
+    <div class="game-analysis">
+      <div class="game-card selected">
+        <h3>­ƒƒó Minecraft Java Edition - SELECCIONADO</h3>
+        <p><strong>Razones para la selecci├│n:</strong></p>
+          <ul>
+            <li><strong>Optimizaci├│n:</strong> Altamente optimizable, permite ajustar gr├íficos para mantener rendimiento</li>
+            <li><strong>Contenido streaming:</strong> Excelente para contenido creativo, construcciones, mods</li>
+            <li><strong>Audiencia:</strong> Amplia base de espectadores en todas las plataformas</li>
+            <li><strong>Longevidad:</strong> Juego con actualizaciones constantes y comunidad activa</li>
+            <li><strong>Requisitos escalables:</strong> Puede funcionar en hardware b├ísico o aprovecha el avanzado</li>
+          </ul>
+      </div>
+
+      <div class="game-card rejected">
+        <h3>­ƒö┤ Counter-Strike 2 - DESCARTADO</h3>
+        <p><strong>Razones del descarte:</strong></p>
+          <ul>
+            <li><strong>Competitividad extrema:</strong> Requiere FPS altos y estables (240+ FPS ideal)</li>
+            <li><strong>Hardware demandante:</strong> Necesita CPU y GPU de alta gama para streaming competitivo</li>
+            <li><strong>Streaming complejo:</strong> El gameplay competitivo es dif├¡cil de mantener mientras se transmite</li>
+            <li><strong>Presupuesto insuficiente:</strong> Hardware ├│ptimo excede los $1000 USD</li>
+          </ul>
+      </div>          
+    </div>
+
+    <div class="game-analysis">
+      <div class="game-card rejected">
+        <h3>­ƒö┤ Valorant - DESCARTADO</h3>
+        <p><strong>Razones del descarte:</strong></p>
+        <ul>
+          <li><strong>Anti-cheat Vanguard:</strong> Puede interferir con software de streaming</li>
+          <li><strong>FPS cr├¡ticos:</strong> Requiere 144+ FPS para gameplay competitivo ├│ptimo</li>
+          <li><strong>Dual-tasking dif├¡cil:</strong> Concentraci├│n en ranked vs. entretenimiento del stream</li>
+          <li><strong>Hardware especializado:</strong> Mejor rendimiento con CPUs Intel de alta frecuencia</li>
+        </ul>
+      </div>
+
+      <div class="game-card">
+        <h3>­ƒÄ» Minecraft - Ventajas para Streaming</h3>
+        <ul>
+          <li><strong>Interacci├│n:</strong> F├ícil comunicaci├│n con viewers durante gameplay</li>
+          <li><strong>Creatividad:</strong> Contenido variado (survival, creative, mods, mapas)</li>
+          <li><strong>Performance predecible:</strong> FPS estable permite dedicar recursos al streaming</li>
+          <li><strong>Comunidad:</strong> Ideal para construir audiencia consistente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="section">
+      <h2>Requisitos del Sistema</h2>
+      <p>Con esto en mente, tambi├®n tenemos que tener en cuenta los requisitos necesarios para poder ejecutar y transmitir Minecraft en nuestra PC.</p>
+                
+      <div class="requirements-grid">
+        <div class="requirement-card">
+          <h4>Minecraft - M├¡nimos</h4>
+          <p><strong>CPU:</strong> Intel i3-3210 / AMD A8-7600</p>
+          <p><strong>RAM:</strong> 4 GB</p>
+          <p><strong>GPU:</strong> GeForce 400 Series / Radeon HD 7000</p>
+          <p><strong>Almacenamiento:</strong> 1 GB</p>
+        </div>
+
+        <div class="requirement-card">
+          <h4>Minecraft - Recomendados</h4>
+          <p><strong>CPU:</strong> Intel i5-4690 / AMD A10-7800</p>
+          <p><strong>RAM:</strong> 8 GB</p>
+          <p><strong>GPU:</strong> GeForce 700 Series / Radeon Rx 200</p>
+          <p><strong>Almacenamiento:</strong> 4 GB (SSD recomendado)</p>
+        </div>
+
+        <div class="requirement-card">
+          <h4>Streaming + Gaming</h4>
+          <p><strong>CPU:</strong> 6+ n├║cleos para encoding</p>
+          <p><strong>RAM:</strong> 16 GB (8GB juego + 4GB OBS + 4GB sistema)</p>
+          <p><strong>GPU:</strong> Codificaci├│n NVENC/AMD VCE</p>
+          <p><strong>Upload:</strong> 5+ Mbps para 1080p</p>
+        </div>
+      </div>
+
+      <div class="streaming-specs">
+        <h4>­ƒö┤ Requisitos Adicionales para Streaming con OBS Studio</h4>
+        <p><strong>Configuraci├│n recomendada para 1080p @ 60fps:</strong></p>
+        <ul>
+          <li><strong>Bitrate de video:</strong> 6000-8000 Kbps</li>
+          <li><strong>Bitrate de audio:</strong> 160-320 Kbps</li>
+          <li><strong>Encoder:</strong> x264 (CPU) o NVENC/AMD VCE (GPU)</li>
+          <li><strong>Preset CPU:</strong> "Medium" o "Fast" para balance calidad/performance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h3>Aclaraciones finales.</h3>
+      <p style="font-style: bold;">Prompt utilizado en la imagen del principio:</p>
+      <p> "Una persona haciendo streaming de videojuegos desde una notebook, jugando Minecraft, con micr├│fono y c├ímara, en una habitaci├│n iluminada con luces LED."</p>
+      <p>Mensaje transmitido:La imagen representa el entorno t├¡pico de un streamer joven que transmite partidas de Minecraft desde una notebook en su casa. S</p>
+
+      <p style="font-style: bold;">┬┐C├│mo te ayud├│ la IA en este trabajo?</p>
+      <p>La IA me ayudo en el trabajo para entender como crear un archivo HTMl, crear listas, titulos, etc. y armar la esctructura del archivo.</p>
+      <p style="font-style: bold;">┬┐Detectaste errores o informaci├│n poco confiable? ┬┐C├│mo lo resolviste? </p>
+      <p>No encontre muchos errores de informacion con la IA, por lo general toda la informacion era correcta.</p>
+      <p style="font-style: bold;">┬┐En qu├® casos prefer├¡s buscar informaci├│n manualmente en lugar de usar IA? </p>
+      <p>Fue preferible buscar informacion manualmente para armar los prespuestos y buscar precios que pedirle a la IA estos mismos y tambien buscar caracteristicas y definiciones de componentes manualmente</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
 
